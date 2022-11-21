@@ -73,7 +73,7 @@ nav ul li a:hover {
 }
 /* section */
 .section {
-    height: 1200px;
+   height: 1200px;
 }
 
 .map_explanation {
@@ -98,13 +98,11 @@ nav ul li a:hover {
    float: left;
    width: 1128px;
    height: 72px;
-   
 }
 .map_textbox2 {
    float: left;
    width: 1128px;
    height: 72px;
-   
 }
 .icon1 {
    float: left;
@@ -112,9 +110,13 @@ nav ul li a:hover {
    height: 72px;
    background-color: #fce9cd;
    border-radius: 10px;
+}
+.svg1 {
+   width: 30px;
+   height: 30px;
    background-image: url(../resources/images/jungenjin/map_marker_icon.svg);
    background-position: center;
-   background-size: 40px cover;
+   background-size: cover;
    box-sizing: border-box;
    background-repeat: no-repeat;
 }
@@ -124,9 +126,13 @@ nav ul li a:hover {
    height: 72px;
    background-color: #fce9cd;
    border-radius: 10px;
+}
+.svg2 {
+   width: 30px;
+   height: 30px;
    background-image: url(../resources/images/jungenjin/subway_regular_icon.svg);
    background-position: center;
-   background-size: 40px cover;
+   background-size: cover;
    box-sizing: border-box;
    background-repeat: no-repeat;
 }
@@ -136,6 +142,10 @@ nav ul li a:hover {
    height: 72px;
    background-color: #fce9cd;
    border-radius: 10px;
+}
+.svg3 {
+   width: 30px;
+   height: 30px;
    background-image: url(../resources/images/jungenjin/bus_icon.svg);
    background-position: center;
    background-size: 40px cover;
@@ -144,118 +154,118 @@ nav ul li a:hover {
 }
 /* font */
 .title {
-    text-align: center;
+   text-align: center;
    font-size: 38px;
    font-weight: bold;
    margin: 100px 0 100px 0;
    color: #161a1d;
- }
- h3 {
+}
+h3 {
    font-size: 24px;
    font-weight: 300;
- }
- span {
+}
+span {
    font-size: 16px;
    font-weight: 700;
    padding: 0 12px 0 30px;
- }
- .text1 {
+}
+.text1 {
    padding: 14px 0 0 0;
    line-height: 1em;
- }
- .text2 {
-   padding: 28px  0 0 0;
- }
+}
+.text2 {
+   padding: 28px 0 0 0;
+}
 /* footer */
 footer {
-    clear: both;
-    width: 100%;
-    min-height: 246px;
-    background-color: #495057;
-    clear: both;
-    margin: 100px 0 0 0;
- }
- .text7 {
-    font-size: 20px;
-    font-weight: 100;
-    color: #f8f9fa;
- }
- .part_4box1 {
-    float: left;
-    width: 277px;
-    height: 155px;
-    margin: 27px 0 0 0;
- }
- .text8 {
-    font-size: 36px;
-    font-weight: 800;
-    color: #161a1d;
- }
- .text9 {
-    font-size: 12px;
-    font-weight: 300;
-    color: #adb5bd;
- }
- .part_4box2 {
-    float: left;
-    width: 585px;
-    height: 155px;
-    margin: 27px 0 0 30px;
- }
- .boximg5 {
-    float: left;
-    width: 175px;
-    height: 114px;
-    background-image: url(../resources/images/jungenjin/bakery3.jpg);
-    background-position: center;
-    margin: 9px 0 0 0;
- }
- .text_box3 {
-    float: left;
-    width: 380px;
-    height: 114px;
-    margin: 9px 0 0 30px;
- }
- .text10 {
-    font-size: 14px;
-    font-weight: bold;
-    color: #dee2e6;
- }
- .part_4box3 {
-    float: left;
-    width: 277px;
-    height: 155px;
-    margin: 27px 0 0 30px;
- }
- .iconbox1 {
-    float: left;
-    width: 24px;
-    height: 24px;
-    background-image: url(../resources/images/jungenjin/youtube_icon.svg);
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-    filter: invert(7%) sepia(7%) saturate(1352%) hue-rotate(163deg) brightness(95%) contrast(93%);
- }
- .iconbox2 {
-    float: left;
-    width: 24px;
-    height: 24px;
-    margin: 0 0 0 15px;
-    background-image: url(../resources/images/jungenjin/twitter_icon.svg);
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-    filter: invert(7%) sepia(7%) saturate(1352%) hue-rotate(163deg) brightness(95%) contrast(93%);
- }
- .iconbox3 {
-    float: left;
-    width: 24px;
-    height: 24px;
-    margin: 0 0 0 15px;
-    background-image: url(../resources/images/jungenjin/instagram_icon.svg);
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-    filter: invert(7%) sepia(7%) saturate(1352%) hue-rotate(163deg) brightness(95%) contrast(93%);
- }
+   clear: both;
+   width: 100%;
+   min-height: 246px;
+   background-color: #495057;
+   clear: both;
+   margin: 100px 0 0 0;
+}
+.text7 {
+   font-size: 20px;
+   font-weight: 100;
+   color: #f8f9fa;
+}
+.part_4box1 {
+   float: left;
+   width: 277px;
+   height: 155px;
+   margin: 27px 0 0 0;
+}
+.text8 {
+   font-size: 36px;
+   font-weight: 800;
+   color: #161a1d;
+}
+.text9 {
+   font-size: 12px;
+   font-weight: 300;
+   color: #adb5bd;
+}
+.part_4box2 {
+   float: left;
+   width: 585px;
+   height: 155px;
+   margin: 27px 0 0 30px;
+}
+.boximg5 {
+   float: left;
+   width: 175px;
+   height: 114px;
+   background-image: url(../resources/images/jungenjin/bakery3.jpg);
+   background-position: center;
+   margin: 9px 0 0 0;
+}
+.text_box3 {
+   float: left;
+   width: 380px;
+   height: 114px;
+   margin: 9px 0 0 30px;
+}
+.text10 {
+   font-size: 14px;
+   font-weight: bold;
+   color: #dee2e6;
+}
+.part_4box3 {
+   float: left;
+   width: 277px;
+   height: 155px;
+   margin: 27px 0 0 30px;
+}
+.iconbox1 {
+   float: left;
+   width: 24px;
+   height: 24px;
+   background-image: url(../resources/images/jungenjin/youtube_icon.svg);
+   background-position: center;
+   background-size: cover;
+   box-sizing: border-box;
+   filter: invert(7%) sepia(7%) saturate(1352%) hue-rotate(163deg) brightness(95%) contrast(93%);
+}
+.iconbox2 {
+   float: left;
+   width: 24px;
+   height: 24px;
+   margin: 0 0 0 15px;
+   background-image: url(../resources/images/jungenjin/twitter_icon.svg);
+   background-position: center;
+   background-size: cover;
+   box-sizing: border-box;
+   filter: invert(7%) sepia(7%) saturate(1352%) hue-rotate(163deg) brightness(95%) contrast(93%);
+}
+.iconbox3 {
+   float: left;
+   width: 24px;
+   height: 24px;
+   margin: 0 0 0 15px;
+   background-image: url(../resources/images/jungenjin/instagram_icon.svg);
+   background-position: center;
+   background-size: cover;
+   box-sizing: border-box;
+   filter: invert(7%) sepia(7%) saturate(1352%) hue-rotate(163deg) brightness(95%) contrast(93%);
+}
