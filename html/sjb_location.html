@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주 묻는 질문</title>
+    <link rel="stylesheet" href="../css/son_location.css">
+</head>
+<body>
+    <div id="box">
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img class="logoimg" src="../resources/images/son/snack.png" alt="">
+                    <img class="logoimg" src="../resources/images/son/snack.png" alt="">
+                    <img class="logoimg" src="../resources/images/son/snack.png" alt="">
+                    <div class="logoname">과자 먹자</div>
+                </div>
+
+                <div id="logintab">
+                    <li id="login">LogIn</li>
+                    <li>회원가입</li>
+                </div>
+                <div class="navi">
+                    <ul>
+                        <li>
+                            <ul class="menu_box">
+                            <a href="#">과자모음</a>
+                                <!-- li속성 넣을 자리 -->
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="menu_box">
+                            <a href="#">선물하기</a>
+                                <!-- li속성 넣을 자리 -->
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="menu_box">
+                            <a href="#">특가이벤트</a>
+                                <!-- li속성 넣을 자리 -->
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="menu_box">
+                            <a href="#">상품추천</a>
+                                <!-- li속성 넣을 자리 -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+        </header>
+        <!-- 헤더 종료 -->
+    <!-- 자주 묻는 질문  검색-->
+    <section>
+        <div class="QnAHeader_top">
+            <div class="FAQ">
+                <span class="FAQWORD">찾아오시는 길</span>        
+            </div>  
+        </div>
+    </section>
+    <!-- 자주 묻는 질문 예시 -->
+    
+    <section >
+        <div class="sectionmap">
+            <div id="map"
+            style=
+            "width: 500px;
+            height:500px;
+            margin:0 auto;">
+            </div>
+ 
+        </div>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=04ed4e58c6dc36cca3a4e11ae4b1e2ab"></script>
+            <script>
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                    mapOption = { 
+                    center: new kakao.maps.LatLng( 37.56442877433773, 126.97565122468217), // 지도의 중심좌표
+                    level: 3 // 지도의 확대 레벨
+                    };
+
+                var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+                // 마커가 표시될 위치입니다 
+                var markerPosition  = new kakao.maps.LatLng(37.56442877433773, 126.97565122468217); 
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+                // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+                // marker.setMap(null);    
+            </script>
+                        
+    
+        
+        </section>
+        <!-- 자주 묻는 질문 예시 끝 -->
+        <!-- 기타 여러리스트 -->
+        <div class="example">
+            <div class="juso">
+                <li class="newjuso">
+                    <p><span>도로명</span> &nbsp; 서울 중구 덕수궁길 15</p>
+                </li>
+                <li class="pastjuso">
+                    <p><span>지번</span> &nbsp; 서소문동 37</p>
+                </li>
+                <li class="postnum">
+                    <p><span>우편번호</span> &nbsp; 04515</p>
+                </li>
+                <li class="subwayfar">시청역 12번 출구에서185m</li>
+            </div>
+        <section>
+
+        <div class="QnAoutlist">
+            <div class="QnAlist">
+                    <ul>
+                        <li>회사소개</li>
+                        <li>인재채용</li>
+                        <li>공지사항</li>
+                        <li>이용약관</li>
+                        <li>개인정보 처리방침</li>
+                        <li>전체 메뉴</li>
+                        <li>오시는 길</li>
+                    </ul>
+                </div>
+            </div>
+        <!-- 리스트 들어갈 자리 -->
+    </section>
+    <!-- 푸터 들어갈 자리 -->
+    <section>
+        <footer class="footer_box">
+            <div class="down_logo">
+                <span>
+                    상호 : (주)과자먹자<br>
+                    대표 : 이과자<br>
+                    주소 : 서울특별시 용산구 한강대로 00<br>
+                    사업자 등록 번호 521-4567-99876<br>
+                    제휴 문의 snackeat@snackeat.co.kr<br>
+                    
+                </span>
+            </div>
+            <div class="copyright">
+                <span>
+                    <h2>고객 상담 센터</h2><br>
+                    <h3>1588-4152</h3><br>
+                    상담시간 : 오전 10:00 ~ 오후 5:00<br>
+                    점심시간 : 오후 12:00 ~ 오후 1:00<br>
+                    
+                </span><br>
+                <span>Copyright &copy; 과자먹자 . All rights reserved.</span><br>
+            </div>
+            <div class="sns">
+                <div id="kind">
+                    <img class="instar" src="../resources/images/son/instagram_icon.png" alt="인스타">
+                    <img class="youtube" src="../resources/images/son/youtube logo_icon.png" alt="유투브">
+                    <img class="twitter" src="../resources/images/son/twitter logo_icon.png" alt="트위터">
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
