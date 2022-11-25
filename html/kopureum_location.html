@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Land Rover Luxury & Compact SUVs | Official Site</title>
+
+  <link rel="stylesheet" href="../css/kopureum_location.css">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap" rel="stylesheet">
+
+  <!-- condenced jQuery -->
+  <script src="../javascript/jquery-3.3.1.min.js"></script>
+  <script src="../javascript/kopureum_location.js"></script>
+
+  <!-- condenced ajax liblery  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- popUp Modal -->
+  <div id="modal">
+    <div class="modal_up">
+      <div class="uptitle">
+        New Year's Offers!
+      </div>
+      <div class="upbody">
+        We Offer Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam enim tempora officia dignissimos
+        ratione velit repudiandae minus expedita? Exercitationem pariatur rem, provident hic unde excepturi ipsum
+        consequuntur officia soluta <br>
+        Thank you! 🥰
+      </div>
+      <div class="modalBtn">closed</div>
+    </div>
+  </div>
+
+  <header>
+    <div class="top">
+      <!-- main shortcut -->
+      <div class="shortcut">
+        <div class="logo">
+          <a href="../index.html"><img src="../resources/images/kopureum/logo-removebg-preview.png" alt="로고이미지"><span
+              class="logo">Return to Main</span></a>
+        </div>
+      </div>
+      <!-- nav menu slideDown -->
+      <nav class="menu">
+
+        <ul class="navi" id="trigger">
+          <li>
+            <a href="#">VEHICLES</a>
+            <ul class="submenu">
+              <li><a href="#">ALL VEHICLES</a></li>
+              <li><a href="#">ELECTRIC</a></li>
+              <li><a href="#">SPECIAL VEHICLE OPERATIONS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">SHOPPING TOOLS</a>
+            <ul class="submenu">
+              <li><a href="#">OFFERS AND FINANCE</a></li>
+              <li><a href="#">BUILD AND PRICE</a></li>
+              <li><a href="#">APPROVED CERTIFIED PRE-OWNED</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">OWNERSHIP</a>
+            <ul class="submenu">
+              <li><a href="#">OWNERSHIP</a></li>
+              <li><a href="#">PREV OWNERSHIP</a></li>
+              <li><a href="#">SERVICE AND MAINTENANCE</a></li>
+              <li><a href="#">CONTACT LAND ROVER</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">EXPLORE</a>
+            <ul class="submenu">
+              <li><a href="#">EXPLORE LAND ROVER</a></li>
+              <li><a href="#">LAND ROVER EXPERIENCES</a></li>
+              <li><a href="#">SPONSORSHIP</a></li>
+              <li><a href="#">INNOVATION AND TECHNOLOGY</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Contents section-->
+
+  <div id="map" style="width:100%;height:450px;"></div>
+
+  <script type="text/javascript"
+    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bf7a5d82f55c3d93f9f552d02b31ae8e"></script>
+  <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+      mapOption = {
+        center: new kakao.maps.LatLng(37.48661, 127.02875), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+      };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption);
+
+    // 마커가 표시될 위치입니다 
+    var markerPosition = new kakao.maps.LatLng(37.48661, 127.02875);
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+      position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    var iwContent = '<div style="padding:5px;">랜드로버KCC오토모빌<br><a href="https://map.kakao.com/link/map/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+      iwPosition = new kakao.maps.LatLng(37.48661, 127.02875); //인포윈도우 표시 위치입니다
+
+    // 인포윈도우를 생성합니다
+    var infowindow = new kakao.maps.InfoWindow({
+      position: iwPosition,
+      content: iwContent
+    });
+
+    // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+    infowindow.open(map, marker); 
+  </script>
+
+  </div>
+  <!-- footer section -->
+  <footer>
+    <div class="bottom">
+      <div class="site">
+        <div class="sns">
+          <ul>
+            <li><a href="#"><img src="../resources/images/kopureum/FB.PNG" alt="이미지1"></a></li>
+            <li><a href="#"><img src="../resources/images/kopureum/IG.PNG" alt="이미지2"></a></li>
+            <li><a href="#"><img src="../resources/images/kopureum/LI.PNG" alt="이미지3"></a></li>
+            <li><a href="#"><img src="../resources/images/kopureum/TT.PNG" alt="이미지3"></a></li>
+          </ul>
+
+        </div>
+        <div class="familysite">
+          <select name="sitelist">
+            <option value="#">FAMILYSITE</option>
+            <option value="#">FAMILYSITE2</option>
+            <option value="#">FAMILYSITE3</option>
+            <option value="#">FAMILYSITE4</option>
+            <option value="#">FAMILYSITE5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- nav menu 2 slideDown -->
+    <nav class="menu2">
+      <ul class="navi2" id="trigger">
+        <li>
+          <a href="#">MEMBERS </a>
+          <ul class="submenu2">
+            <li><a href="/html/kopureum_faq.html">FAQ 🗣️</a></li>
+            <!-- <li><a href="#">SIGN IN/SIGN UP 👤</a></li> -->
+            <!-- <li><a href="#">EVENT 🤲</a></li> -->
+          </ul>
+        </li>
+        <li>
+          <a href="#">COMPANY </a>
+          <ul class="submenu2">
+            <!-- <li><a href="#">ABOUT US 🔧</a></li> -->
+            <li><a href="/html/kopureum_location.html">LOCATION 📌</a></li>
+            <!-- <li><a href="#">WHAT ELSE</a></li> -->
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- copyright -->
+    <div class="cptext">
+      &#169; 2022 UNG ER UNG ER SI REUM SI REM AR AR, LLC <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quam ut alias voluptate maiores consequatur
+      animi fuga iure! Consequatur ipsa quasi dolore vel, dicta consectetur quod? Harum omnis sint distinctio.
+    </div>
+  </footer>
+</body>
+
+</html>
