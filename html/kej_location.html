@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주하는 질문</title>
+    <link rel="stylesheet" href="../css/kej_location.css">
+    <script src="../javascript/prefixfree.min.js"></script>
+    <style>
+        .map_markder {position: absolute;left: 0;bottom: 40px;width: 288px;height: 132px;margin-left: -144px;overflow: hidden;}
+        .map_markder .info {width: 286px;height: 120px;border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
+        .map_markder .info:first-child {border: 0;box-shadow: 0px 1px 2px #888;}
+        .map_markder .info .title {padding: 7px 0 0 13px;height: 40px;background: #f9f9f9;border-bottom: 1px solid #ddd;font-size: 2rem;font-weight: 600;}
+        .info .desc {position: relative;margin: 13px;height: 75px;}
+        .desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+        .desc .jibun {color: #888;margin-top: -2px;}
+        .info:after {content: "";position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url(../resources/images/kej/vertex_white.png);}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- header start -->
+        <header class="header">
+            <div class="top_menu_wrap">
+                <div class="flexbox">
+                    <a href="html/kej_location.html" class="hd_logo"><img src="../resources/images/kej/ej_logo.png" alt="EJ TRAVEL TRIP"></a>
+                    <div class="tr">
+                        <ul class="tnp">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">예약확인/결제</a></li>
+                            <li><a href="">고객센터</a></li>
+                        </ul>
+                        <div class="util">
+                            <a href="#" class="search"><img src="../resources/images/kej/ico-hd-sch.png" alt="검색"></a>
+                            <a href="#" class="allmenu"><img src="../resources/images/kej/allmenu.png" alt="전체메뉴"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="local_menu_wrap">
+                <div class="flexbox">
+                    <ul class="gnb">
+                        <li><a href="#"><span>해외여행</span></a></li>
+                        <li><a href="#">제주/국내여행</a></li>
+                        <li><a href="#">테마여행</a></li>
+                        <li><a href="#">자유여행</a></li>
+                        <li><a href="#">항공</a></li>
+                        <li><a href="#">호텔</a></li>
+                        <li><a href="#">현지투어/입장권</a></li>
+                        <li><a href="#">렌터카</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- content start -->
+        <main class="content">
+            <!-- page title start -->
+            <div class="sub_tit">
+                <div class="flexbox">
+                    <h2 class="tit">찾아오시는 길</h2>
+                </div>
+            </div>
+            <div class="location">
+                <div class="flexbox">
+                    <ul>
+                        <li class="home"><a href="kej_location.html">홈</a></li>
+                        <li>회사소개</li>
+                        <li>오시는 길</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- page title end -->
+            <!-- location start -->
+            <div class="content_body">
+                <div class="map_cont">
+                    <div class="flexbox">
+                        <div id="map"></div>
+                        <div class="f_left">
+                            <h4 class="title">회사 주소</h4>
+                            <p>서울특별시 가나구 다라마로 1길 234호 EJ TRAVEL TRIP<br>(01234)</p>
+                            <ul>
+                                <li>마케팅&amp;제휴 : crm@ejtraveltrip.com</li>
+                                <li>IR : IR@ejtraveltrip.com</li>
+                                <li>채용 : recruit@ejtraveltrip.com</li>
+                                <li>견학 : whyindia@ejtraveltrip.com</li>
+                            </ul>
+                        </div>
+                        <div class="f_right">
+                            <dl>
+                                <dt><i></i>지하철 이용시</dt>
+                                <dd><span class="blue">1호선 이용시 : </span>신도림역 2번 출구 테크노마트 지하1층 연결</dd>
+                                <dd><span class="green">2호선 이용시 : </span>신도림역 2번 출구 테크노마트 지하1층 연결</dd>
+                            </dl>
+                            <dl>
+                                <dt><i></i>버스 이용시</dt>
+                                <dd>신도림역 1번 출구 하차(지하보도를 이용하여 2번 출구로 이동)</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- location end -->
+        </main>
+        <!-- content end -->
+        <!-- footer start -->
+        <footer class="footer">
+            <div class="fnb">
+                <div class="flexbox">
+                    <a href="#">회사소개</a>
+                    <a href="#">이용약관</a>
+                    <a href="#"><strong>개인정보보호정책</strong></a>
+                    <a href="#">여행약관</a>
+                    <a href="#">여행자보험</a>
+                    <a href="#">마케팅제휴문의</a>
+                    <a href="#">온라인제휴문의</a>
+                    <a href="#">여행플래너</a>
+                    <a href="#">대리점개설문의</a>
+                </div>
+            </div>
+            <div class="footer_body">
+                <div class="flexbox">
+                    <a href="html/kej_location.html" class="ft_logo"><img src="../resources/images/kej/ft_ej_logo.png" alt="EJ TRAVEL TRIP"></a>
+                    <div class="info_cont">
+                        <div class="licnese_area">
+                            <span>EJ TRAVEL TRIP</span>
+                            <span>주소 : 우)01234 서울특별시 가나구 다라마로 1길 234호</span>
+                        </div>
+                        <div class="licnese_area">
+                            <span>TEL : 02-123-4567~8</span>
+                            <span>FAX : 02-123-4569</span>
+                            <span>E-MAIL : ejtraveltrip@ejtraveltrip.com</span>
+                        </div>
+                        <div class="copy_area">
+                            <p>※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.</p>
+                            <p>※ 개별 항공권, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래등에 대해 책임을 지지 않습니다.</p>
+                            <p>Copyright &copy; 2022 EJ TRAVEL TRIP. All Rights Reserved.</p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c7dbf30274bfcb5bd2afcd62da0c73c9"></script>
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+                center: new kakao.maps.LatLng(37.50700, 126.89050), // 지도의 중심좌표
+                level: 4 // 지도의 확대 레벨
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var imageSrc = '../resources/images/kej/marker.png', // 마커이미지의 주소입니다    
+            imageSize = new kakao.maps.Size(65, 70), // 마커이미지의 크기입니다
+            imageOption = {offset: new kakao.maps.Point(29, 37)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+        // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            markerPosition = new kakao.maps.LatLng(37.50700, 126.89050); // 마커가 표시될 위치입니다
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+        position: markerPosition,
+        image: markerImage // 마커이미지 설정 
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);  
+
+        // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+        var content = '<div class="map_markder">' + 
+            '    <div class="info">' + 
+            '        <div class="title">EJ TRAVEL TRIP</div>' + 
+            '        <div class="desc">' + 
+            '            <div class="ellipsis">서울특별시 가나구 다라마로 1길 234호</div>' + 
+            '            <div class="jibun ellipsis">(우) 01234 (지번) 다라마동 2181</div>' + 
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+        // 커스텀 오버레이가 표시될 위치입니다 
+        var position = new kakao.maps.LatLng(37.50700, 126.89050);  
+
+        // 커스텀 오버레이를 생성합니다
+        var customOverlay = new kakao.maps.CustomOverlay({
+            map: map,
+            position: position,
+            content: content,
+            yAnchor: 1 
+        });
+    </script>
+</body>
+</html>
